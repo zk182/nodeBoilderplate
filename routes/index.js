@@ -3,8 +3,8 @@ const swaggerUi = require('swagger-ui-express');
 const { swaggerOptions } = require('../lib');
 
 const healthCheckRoute = require('./healthCheckRoute');
-const errorsRoute = require('./errorsRoute');
-const exampleRoute = require('./exampleRoute');
+const errorsRoute = require('../middlewares/errorsRoute');
+const exampleRoute = require('../components/example/exampleRoute');
 
 const { jwtHelper } = require('../middlewares');
 

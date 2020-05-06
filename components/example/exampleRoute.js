@@ -1,5 +1,5 @@
 const exampleRouter = require('express').Router();
-const service = require('../components/example/exampleService');
+const service = require('./exampleService');
 
 exampleRouter.route('/')
 	.get(service.getAll);

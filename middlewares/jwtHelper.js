@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const { config } = require('../config');
 const { messages, generalTypes } = require('../lib');
-const ErrorHelper = require('./errorHelper');
+const ErrorHelper = require('../components/error/errorHelper');
 const jwtValidate = require('../components/jwt/jwtValidations');
 
 const verifyJwtToken = async (bearerHeader) => {

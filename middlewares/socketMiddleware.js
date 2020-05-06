@@ -1,4 +1,4 @@
-const ErrorHelper = require('./errorHelper');
+const ErrorHelper = require('../components/error/errorHelper');
 const Socket = require('../socket');
 
 const inyectSocket = (req, res, next) => {
